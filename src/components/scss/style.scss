@@ -1,0 +1,214 @@
+// #root {
+//   padding: 0;
+//   margin: 0;
+//   box-sizing: border-box;
+// }
+
+.bg-content {
+  background-image: url(./public/bgmovie.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // opacity: 0.9;
+  color: #fff;
+  background-attachment: fixed;
+
+  .title {
+    font-size: 3.5vw;
+    font-weight: 600;
+    text-shadow: 4px 3px 1px rgba(0, 0, 0, 0.22);
+    letter-spacing: 2px;
+    padding: 0.8em 1vw 0.9em;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-pack: center;
+
+    .body-content {
+      width: 700px;
+      margin: 0 5vw;
+      padding: 3.5vw;
+      background: rgba(128, 128, 128, 0.65);
+      display: -webkit-flex;
+      flex-wrap: wrap;
+
+      h5 {
+        color: #ff9800;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        font-size: 1em;
+        letter-spacing: 0.5px;
+        line-height: 1.7;
+      }
+
+      .user-content {
+        width: 100%;
+
+        .user_left {
+          flex-basis: 60%;
+          margin-bottom: 1.5em;
+
+          label {
+            font-size: 1em;
+            color: #fff;
+            font-weight: 600;
+            margin-right: 8px;
+          }
+
+          input {
+            padding: 1em;
+            width: 80%;
+            background: transparent;
+            border: 1px solid #fff;
+            font-size: 1em;
+            margin-top: 10px;
+            color: #fff;
+            font-family: "Source Sans Pro", sans-serif;
+          }
+        }
+
+        .user_right {
+          flex-basis: 40%;
+          margin-bottom: 1.5em;
+
+          label {
+            font-size: 1em;
+            color: #fff;
+            font-weight: 600;
+          }
+
+          input {
+            padding: 1em;
+            width: 80%;
+            background: transparent;
+            border: 1px solid #fff;
+            font-size: 1em;
+            margin-top: 10px;
+            color: #fff;
+            font-family: "Source Sans Pro", sans-serif;
+          }
+        }
+      }
+
+      button {
+        background: #f5f5f5;
+        border: none;
+        color: #000;
+        font-weight: 600;
+        padding: 8px 20px;
+        border-radius: 10px;
+        font-size: 1em;
+        letter-spacing: 1px;
+        font-family: "Source Sans Pro", sans-serif;
+        cursor: pointer;
+      }
+
+      .seats-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 20px;
+      }
+
+      .column-labels {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+      }
+
+      .column-label {
+        width: 40px;
+        text-align: center;
+        margin: 2px;
+      }
+
+      .seat-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+
+      .row-label {
+        width: 40px;
+        text-align: center;
+        margin-right: 5px;
+      }
+
+      .seatClass {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        margin: 2px;
+        box-sizing: border-box;
+        background: #fff;
+        color: #000;
+      }
+
+      .seatClass.available {
+        background-color: #fff;
+      }
+
+      .seatClass.occupied {
+        background-color: #f00;
+        color: #fff;
+      }
+
+      .empty-cell {
+        width: 40px;
+        margin-right: 5px;
+      }
+
+      .screen {
+        width: 100%;
+        margin: 2em 0;
+        background: #ff9800;
+        text-align: center;
+
+        .screen-content {
+          padding: 0.8em;
+          font-size: 1.2em;
+          color: #000;
+          text-transform: uppercase;
+          font-weight: 600;
+          letter-spacing: 7px;
+          word-spacing: 10px;
+        }
+
+        button {
+          background: #f5f5f5;
+          border: none;
+          color: #000;
+          font-weight: 600;
+          padding: 8px 20px;
+          border-radius: 10px;
+          font-size: 1em;
+          letter-spacing: 1px;
+          font-family: "Source Sans Pro", sans-serif;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .footer-content {
+    padding: 3em 0em;
+    text-align: center;
+
+    p {
+      color: whitesmoke;
+      font-size: 15px;
+      letter-spacing: 1px;
+      font-weight: 600;
+      line-height: 1.7;
+      padding: 0 1em;
+    }
+  }
+}
