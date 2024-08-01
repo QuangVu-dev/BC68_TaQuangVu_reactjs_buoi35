@@ -195,15 +195,48 @@
           cursor: pointer;
         }
       }
+
+      .displayInfo {
+        text-align: center;
+        margin-top: 2em;
+        font-size: 14px;
+
+        .table-style {
+          width: 100%;
+          border-collapse: separate;
+          border-spacing: 2px;
+          border-color: grey;
+
+          tr {
+            background: #fff;
+            color: #fff;
+
+            th,
+            td {
+              width: 100%;
+              padding: 7px 10px;
+              color: #000;
+              font-weight: 600;
+
+              textarea {
+                border: none;
+                background: transparent;
+                resize: none;
+              }
+            }
+          }
+        }
+      }
     }
   }
 
   .footer-content {
-    padding: 3em 0em;
+    padding: 2em 0em;
     text-align: center;
+    background-color: #ccc;
 
     p {
-      color: whitesmoke;
+      color: #fff;
       font-size: 15px;
       letter-spacing: 1px;
       font-weight: 600;
